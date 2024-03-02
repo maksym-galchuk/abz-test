@@ -11,12 +11,12 @@ interface RadioProps {
 
 export const Radio = memo(
   ({ className, checked, text, onChange }: RadioProps) => {
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = () => {
       onChange();
     };
 
     return (
-      <label className={styles.wrapper}>
+      <label className={clsx(styles.wrapper, className)}>
         <input
           type="radio"
           name="radio"
