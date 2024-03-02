@@ -28,7 +28,6 @@ export const UsersList = ({ className, id }: UsersListProps) => {
   }, []);
 
   const disabledShowMore = isLoading || !nextQuery;
-  console.log(nextQuery);
 
   const handleShowMore = () => {
     if (users.length < (shownPage + 1) * count) {

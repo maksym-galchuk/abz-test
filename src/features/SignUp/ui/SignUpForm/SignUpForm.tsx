@@ -54,7 +54,6 @@ export const SignUpForm = ({ className, id }: SingUpFormProps) => {
   const clearErrors = useCallback(
     (key: keyof SignUpErrors) => {
       if (errors[key] !== undefined) {
-        console.log(123);
         dispatch(
           signUpActions.setError({
             [key]: undefined,
