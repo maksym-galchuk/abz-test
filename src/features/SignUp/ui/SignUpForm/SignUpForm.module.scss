@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+}
+
+.fields {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputName, .inputEmail {
+  margin-bottom: 50px;
+}
+
+.inputPhone {
+  margin-bottom: 43px;
+}
+
+.positionsField {
+  margin-bottom: 47px;
+}
+
+.positionsTitle {
+  margin-bottom: 11px;
+}
+
+.positionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-start;
+}
+
+.globalError {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 40px;
+}
+
+.loader {
+  position: absolute;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .fields {
+    max-width: 100%;
+  }
+}
+
+

@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 80px;
+  padding: 4px 23px;
+  border: none;
+  transition: background .3s ease-in-out;
+  cursor: pointer;
+  color: var(--black-87-color);
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.yellow {
+  background: var(--primary-color);
+
+  &:hover {
+    background: #FFE302;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.87);
+    background: #B4B4B4;
+  }
+}

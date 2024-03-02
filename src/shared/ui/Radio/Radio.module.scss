@@ -1,0 +1,39 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.radioInput {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+
+  font: inherit;
+  color: var(--secondary-color);
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+
+  transform: translateY(3.5px);
+
+  display: grid;
+  place-content: center;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--secondary-color);
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+}

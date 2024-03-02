@@ -1,0 +1,51 @@
+.hero,.heroInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  height: 650px;
+
+  background-image:
+    url("src/shared/assets/images/hero.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroInner {
+  max-width: 380px;
+  flex-direction: column;
+}
+
+.title, .text {
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 21px;
+}
+
+.text {
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1169px) {
+  .hero {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heroInner {
+    max-width: var(--container-width);
+  }
+}

@@ -1,0 +1,28 @@
+@import "reset";
+@import "variables";
+@import "typography";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-color);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+}
+
+.hero, .usersList {
+  margin-bottom: 140px;
+}
+
+.form {
+  margin-bottom: 100px;
+}
+
+
+

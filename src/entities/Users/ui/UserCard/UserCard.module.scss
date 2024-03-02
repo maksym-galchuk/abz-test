@@ -1,0 +1,23 @@
+.userCard {
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+
+  text-align: center;
+}
+
+.pfp {
+  align-self: center;
+}
+
+.bottomGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100%;
+}

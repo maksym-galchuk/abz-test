@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #F4E041;
+  --secondary-color: #00BDD3;
+  --background-color: #F8F8F8;
+  --error-color: #CB3D40;
+
+  --gray-color: #7E7E7E;
+  --light-gray-color: #D0CFCF;
+  --black-87-color: rgba(0, 0, 0, 0.87);
+
+  --container-width: 1170px;
+
+  @media screen and (max-width: 1169px) {
+    --container-width: 904px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    --container-width: 704px;
+  }
+
+  @media screen and (max-width: 767px) {
+    --container-width: 328px;
+  }
+}
+
